@@ -1,5 +1,11 @@
 # Tic Tac Game
 
+## Game UI
+
+<p align="center">
+   <img width="250" src = "https://github.com/Vaibhav-kesarwani/Tic-Tac-Game-App/assets/116189379/e3fa85d7-631a-46ed-88c0-1e796235a51a">
+   <img width="250" src = "https://github.com/Vaibhav-kesarwani/Tic-Tac-Game-App/assets/116189379/cf3308bd-f952-4f04-b116-eafbc091f31b">
+</p>
 
 ## How to setup project locally
 
