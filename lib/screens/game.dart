@@ -28,7 +28,7 @@ class _GameScreenState extends State<GameScreen> {
   Timer? timer;
 
   static var customFontWhite = GoogleFonts.coiny(
-    textStyle: TextStyle(
+    textStyle: const TextStyle(
       color: Colors.white,
       letterSpacing: 3,
       fontSize: 28,
@@ -36,7 +36,7 @@ class _GameScreenState extends State<GameScreen> {
   );
 
   void startTimer() {
-    timer = Timer.periodic(Duration(seconds: 1), (_) {
+    timer = Timer.periodic(const Duration(seconds: 1), (_) {
       setState(() {
         if (seconds > 0) {
           seconds--;
@@ -81,7 +81,7 @@ class _GameScreenState extends State<GameScreen> {
                       ),
                     ],
                   ),
-                  SizedBox(width: 20),
+                  const SizedBox(width: 20),
                   Column(
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
@@ -102,7 +102,7 @@ class _GameScreenState extends State<GameScreen> {
               flex: 3,
               child: GridView.builder(
                   itemCount: 9,
-                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount: 3,
                   ),
                   itemBuilder: (BuildContext context, int index) {
@@ -144,7 +144,7 @@ class _GameScreenState extends State<GameScreen> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(resultDeclaration, style: customFontWhite),
-                    SizedBox(height: 10),
+                    const SizedBox(height: 10),
                     _buildTimer()
                   ],
                 ),
@@ -310,14 +310,14 @@ class _GameScreenState extends State<GameScreen> {
               children: [
                 CircularProgressIndicator(
                   value: 1 - seconds / maxSeconds,
-                  valueColor: AlwaysStoppedAnimation(Colors.white),
+                  valueColor: const AlwaysStoppedAnimation(Colors.white),
                   strokeWidth: 8,
                   backgroundColor: MainColor.accentColor,
                 ),
                 Center(
                   child: Text(
                     '$seconds',
-                    style: TextStyle(
+                    style: const TextStyle(
                       fontWeight: FontWeight.bold,
                       color: Colors.white,
                       fontSize: 50,
@@ -330,7 +330,7 @@ class _GameScreenState extends State<GameScreen> {
         : ElevatedButton(
             style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.white,
-                padding: EdgeInsets.symmetric(horizontal: 32, vertical: 16)),
+                padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 16)),
             onPressed: () {
               startTimer();
               _clearBoard();
@@ -338,7 +338,7 @@ class _GameScreenState extends State<GameScreen> {
             },
             child: Text(
               attempts == 0 ? 'Start' : 'Play Again!',
-              style: TextStyle(fontSize: 20, color: Colors.black),
+              style: const TextStyle(fontSize: 20, color: Colors.black),
             ),
           );
   }
