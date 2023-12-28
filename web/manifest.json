@@ -1,6 +1,6 @@
 {
-    "name": "tictac",
-    "short_name": "tictac",
+    "name": "flutter_tic_tac_toe",
+    "short_name": "flutter_tic_tac_toe",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
