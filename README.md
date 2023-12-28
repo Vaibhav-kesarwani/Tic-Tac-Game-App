@@ -69,4 +69,4 @@ If you have any questions or need further assistance, please contact:
 
 - **Author:** Vaibhav Kesarwani
 - **Email:** vaibhavkesarwani100@gmail.com
-- **Project Link:** [Tic Tac Game App](https://github.com/Vaibhav-kesarwani/Todo-App)
+- **Project Link:** [Tic Tac Game App](https://github.com/Vaibhav-kesarwani/Tic-Tac-Game-App)
